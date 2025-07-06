@@ -31,7 +31,7 @@ def load_detector():
 classifier = load_classifier()
 detector = load_detector()
 
-class SignLanguageTransformer(090):
+class SignLanguageTransformer(VideoTransformerBase):
     def __init__(self):
         self.classifier = classifier
         self.detector = detector
