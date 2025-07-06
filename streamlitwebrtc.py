@@ -13,9 +13,10 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
 
 # Streamlit page setup
 st.set_page_config(page_title="Live Hand Sign Recognition", layout="wide")
-st.title("🎥 Live Hand Sign Recognition (A, B, C)")
+st.title("🎥 Live Hand Sign Recognition")
 
-labels = ["A", "B", "C"]
+labels = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
+ 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 offset = 20
 imgSize = 300
 
