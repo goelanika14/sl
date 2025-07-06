@@ -19,7 +19,6 @@ labels = ["A", "B", "C"]
 offset = 20
 imgSize = 300
 
-# ✅ Cache the model and detector to avoid reloading every time
 @st.cache_resource
 def load_classifier():
     return Classifier("Model/keras_model.h5", "Model/labels.txt")
@@ -31,7 +30,7 @@ def load_detector():
 classifier = load_classifier()
 detector = load_detector()
 
-class SignLanguageTransformer(VideoTransformerBase):
+class SignLanguageTransformer(090):
     def __init__(self):
         self.classifier = classifier
         self.detector = detector
@@ -80,8 +79,8 @@ webrtc_streamer(
         "iceServers": [
             {"urls": ["stun:bn-turn2.xirsys.com"]},
             {
-                "username": "rJhsnYer6656GcqAKdFv-Z3-h8aNNR6PkqNzxkF776vL4EUhx0bJaEjH4rQmjjLqAAAAAGhXjPFTaWduTGFuZ3VhZ2U=",
-                "credential": "3b64b224-4f25-11f0-8c9c-0242ac140004",
+                "username": "tmd-pzTYrGyZ4CqQsIeqqI7M0laptdgEzqinoKPLwXD5AruksxIpk3lxUYsGkpEbAAAAAGhqFMJnb2VsYW5pa2E1",
+                "credential": "c3f63a34-5a30-11f0-a169-0242ac140004",
                 "urls": [
                     "turn:bn-turn2.xirsys.com:80?transport=udp",
                     "turn:bn-turn2.xirsys.com:3478?transport=udp",
